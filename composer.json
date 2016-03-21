@@ -1,0 +1,21 @@
+{
+    "name": "aivanouski/amazon-mws-products",
+    "type": "library",
+    "description": "Amazon Marketplace Web Service Products PHP Client Library Version 2011-10-01",
+    "keywords": ["amazon", "mws", "products", "client", "api", "library"],
+    "licence": "Apache-2.0",
+    "authors": [
+        {
+          "name": "Andrei Ivanouski",
+          "email": "aivanouski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.8",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "include-path": ["src/"]
+}
