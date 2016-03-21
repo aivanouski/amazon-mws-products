@@ -996,7 +996,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
                     return array('ResponseBody' => $response['ResponseBody'],
                       'ResponseHeaderMetadata' => $response['ResponseHeaderMetadata']);
                 }
-                if ($status == 500 && $this->_pauseOnRetry(++$retries)) {
+                if ($status >= 500 && $this->_pauseOnRetry(++$retries)) {
                     continue;
                 }
                 throw $this->_reportAnyErrors($response['ResponseBody'],
